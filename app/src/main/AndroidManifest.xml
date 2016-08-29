@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pzl.materialdesignlibrarydemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CollapsingToolbarLayout.CollapsingToolbarLayoutActivity"
+            android:label="@string/title_activity_app_bar_layout"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AppBarLayout.ScrollActivity"
+            android:label="@string/title_activity_scroll"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AppBarLayout.EnterAlwaysActivity"
+            android:label="@string/title_activity_enter_always"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AppBarLayout.CombineActivity"
+            android:label="@string/title_activity_combine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AppBarLayout.EnterAlwaysCollapsedActivity"
+            android:label="@string/title_activity_enter_always_collapsed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AppBarLayout.ExitUntilCollapsedActivity"
+            android:label="@string/title_activity_exit_until_collapsed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AppBarLayout.SnapActivity"
+            android:label="@string/title_activity_snap"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollapsingToolbarLayout.ContentScrimActivity"
+            android:label="@string/title_activity_content_scrim"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CoordinatorLayout.CoordinatorLayoutActivity"
+            android:label="@string/title_activity_coordinator_layout"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AppBarLayout.AppBarLayoutActivity"
+            android:label="@string/title_activity_coordinator_layout"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CoordinatorLayout.Demo1Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CoordinatorLayout.Demo2Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CoordinatorLayout.Demo3Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

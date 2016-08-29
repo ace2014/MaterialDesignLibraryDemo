@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AppBarLayout.ScrollActivity">
+
+    <!-- AppBarLayout，作为CoordinatorLayout的子类 -->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--
+          那些使用Scroll flag的视图必须在其他没有使用Scroll flag的视图之前声明。这样才能确保所有的视图从顶部撤离，剩下的元素固定在前面（译者注：剩下的元素压在其他元素的上面）
+        -->
+
+        <!--
+        scroll: 所有想滚动出屏幕的view都需要设置这个flag ，没有设置这个flag的view将被固定在屏幕顶部。
+        -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#212774"
+            android:padding="8dp"
+            app:layout_scrollFlags="scroll">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f47d7d" />
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentBottom="true"
+                android:background="#9ff47d" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4d28691d"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="没有scrollFlags的普通view"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--
+    注意AppBarLayout的兄弟节点（或兄弟节点的子view）一定要是可以滚动的View/ViewGroup，实现了NestedScrollingChild接口，
+    如：NestedScrollView，RecycleView，事件动作的主动发起者
+    -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <!-- appbarlayout 内置behavior :Behavior , ScrollingViewBehavior -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/text_long" />
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

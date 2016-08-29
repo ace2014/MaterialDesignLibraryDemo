@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.pzl.materialdesignlibrarydemo.AppBarLayout.EnterAlwaysActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--
+        enterAlways: 这个flag让任意向下的滚动都会导致该view变为可见（向下滚动，toolbar又出现)，启用”快速返回”模式。
+        -->
+        <View
+            android:id="@+id/v"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#f47d7d"
+            app:layout_scrollFlags="enterAlways|scroll" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/text_long" />
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

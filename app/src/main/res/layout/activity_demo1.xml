@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.pzl.materialdesignlibrarydemo.CoordinatorLayout.Demo1Activity">
+
+
+    <TextView
+        android:id="@+id/view01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#90f48484"
+        android:gravity="center"
+        android:text="view01" />
+
+    <TextView
+        android:id="@+id/view02"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#d0c1faf6"
+        android:gravity="center"
+        android:text="view02"
+        app:layout_behavior="com.pzl.materialdesignlibrarydemo.CoordinatorLayout.MyBehavior" />
+
+</android.support.design.widget.CoordinatorLayout>
