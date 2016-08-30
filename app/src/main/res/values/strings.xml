@@ -134,4 +134,10 @@
     <string name="title_activity_collapsing_toolbar_layout">CollapsingToolbarLayoutActivity</string>
     <string name="title_activity_content_scrim">ContentScrimActivity</string>
     <string name="title_activity_coordinator_layout">CoordinatorLayoutActivity</string>
+    <string name="title_activity_bottom_sheet_dialog">BottomSheetDialogActivity</string>
+    <string name="title_activity_bottom_sheet_dialog_fragment">BottomSheetDialogFragmentActivity
+    </string>
+    <string name="title_activity_snackbar">SnackbarActivity</string>
+    <string name="title_activity_tab_layout">TabLayoutActivity</string>
+    <string name="title_activity_text_input_edit_text">TextInputEditTextActivity</string>
 </resources>

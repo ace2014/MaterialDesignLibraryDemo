@@ -20,7 +20,7 @@
         <activity
             android:name=".CollapsingToolbarLayout.CollapsingToolbarLayoutActivity"
             android:label="@string/title_activity_app_bar_layout"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AppBarLayout.ScrollActivity"
             android:label="@string/title_activity_scroll"
@@ -52,19 +52,39 @@
         <activity
             android:name=".CoordinatorLayout.CoordinatorLayoutActivity"
             android:label="@string/title_activity_coordinator_layout"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AppBarLayout.AppBarLayoutActivity"
             android:label="@string/title_activity_coordinator_layout"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CoordinatorLayout.Demo1Activity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CoordinatorLayout.Demo2Activity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CoordinatorLayout.Demo3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BottomSheetDialog.BottomSheetDialogActivity"
+            android:label="@string/title_activity_bottom_sheet_dialog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BottomSheetDialogFragment.BottomSheetDialogFragmentActivity"
+            android:label="@string/title_activity_bottom_sheet_dialog_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Snackbar.SnackbarActivity"
+            android:label="@string/title_activity_snackbar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabLayout.TabLayoutActivity"
+            android:label="@string/title_activity_tab_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TextInputEditText.TextInputEditTextActivity"
+            android:label="@string/title_activity_text_input_edit_text"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
